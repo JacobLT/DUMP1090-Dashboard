@@ -83,7 +83,7 @@ export class MapContainer extends Component {
         google={this.props.google}
         zoom={8}
         style={{ height: `75%`, width: '95%' }}
-        initialCenter={{ lat: 52.056736, lng: 1.148220 }}
+        initialCenter={{ lat: process.env.REACT_APP_LAT, lng: process.env.REACT_APP_LNG }}
       >
         {this.displayMarkers()}
 
